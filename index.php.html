@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Control de Stock</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Control de Stock</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+         <div class="col-md-3" style="margin-top: 40px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir trabajador <i class="glyphicon glyphicon-user"></i></p></button></p>
+         </div>
+         <div class="col-md-3" style="margin-top: 40px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir categoria <i class="glyphicon glyphicon-tag"></i></p></button></p>
+         </div>
+         <div class="col-md-3" style="margin-top: 40px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir subcategoria <i class="glyphicon glyphicon-tags"></i></p></button></p>
+         </div>
+         <div class="col-md-3" style="margin-top: 40px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir articulo <i class="glyphicon glyphicon-bookmark"></i></p></button></p>
+         </div>
+        </div>
+        <div class="row">
+         <div class="col-md-3" style="margin-top: 20px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir proveedor <i class="glyphicon glyphicon-th-list"></i></p></button></p>
+         </div>
+         <div class="col-md-3" style="margin-top: 20px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir entrada <i class="glyphicon glyphicon-log-in"></i></p></button></p>
+         </div>
+         <div class="col-md-3" style="margin-top: 20px">
+          <p><button type="button" class="btn btn-primary btn-lg btn-block"><p>A&ntilde;adir salida <i class="glyphicon glyphicon-log-out"></i></p></button></p>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h2>Almacen</h2>
+          <form class="form-inline">
+            <div class="form-group">
+              <select class="form-control" style="width: 200px">
+                <option>[Categoria]</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control" style="width: 200px">
+                <option>[Subcategoria]</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-default">Stock minimo</button>
+          </form>
+          <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Referencia</th>
+          <th>Articulo</th>
+          <th>Categoria</th>
+          <th>Subcategoria</th>
+          <th>Stock</th>
+          <th>Stock minimo</th>
+          <th>Proveedor</th>
+          <th>Observacion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Articulo</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Petronics Tecnologia SL <?= date("Y") ?></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
